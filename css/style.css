@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+:root{
+    --clr-main:#011F26;
+    --clr-01:#023859;
+    --clr-02:#025959;
+    --clr-03:#038C7F;
+    --clr-04:#011526;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' sans-serif;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+
+.logo{
+    margin: 0.9rem;
+    opacity: 0.7;
+}
+
+
+nav{
+    background-color:rgb(31, 31, 31);
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: .8rem;
+    border-style: solid;
+    border-width: .5rem;
+}
+    nav ul li a{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: x-large;
+        color: var(--clr-03);
+    }
+
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+    padding: 0;
+    margin: 0;
+}    
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.banner{
+    width: 100%;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: var(--clr-02);
+}
+
+.bg-color{
+    background-color: black;
+}
+
+.wrapper{
+    background-color: antiquewhite;
+}
+
+.encabezado{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: white;
+    background-color: black;
+    padding: 2rem;
+    border-style: solid;
+    border-width: 2rem;
+    border-color: black;
+}
+
+
+.prod-destacados{
+    margin: 2.8rem 2.8rem;
+}
+
+
+.nuevos-ingresos{
+    margin: 2.8rem 2.8rem;        
+}
+
+
+h2{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+figure img{
+    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+    padding: .7rem;
+    width: 100%;
+}
