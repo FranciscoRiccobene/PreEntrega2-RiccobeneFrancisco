@@ -14,7 +14,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+    padding: 0;
+    margin: 0;
+}  
+
+.text-color{
+    color: var(--clr-01)
 }
 
 
@@ -51,11 +60,7 @@ nav ul{
         color: var(--clr-03);
     }
 
-
-h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
-    padding: 0;
-    margin: 0;
-}    
+        /*Termina nav*/
 
 ul{
     list-style: none;
@@ -64,6 +69,32 @@ ul{
 a{
     text-decoration: none;
 }
+
+
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 1rem 1.2rem;
+    font-size: 1.2rem;
+}
+
+
+h2{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #000000;
+    margin: 1.5rem 1.2rem;
+}
+
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem 1.2rem; 
+    font-weight: 400;
+}
+
 
 .banner{
     width: 100%;
@@ -87,42 +118,156 @@ a{
     font-size: 3.5rem;
     color: white;
     background-color: black;
-    padding: 2rem;
+    padding: 1rem;
     border-style: solid;
     border-width: 2rem;
     border-color: black;
+    margin-top: -1rem;
 }
 
 
-.prod-destacados{
-    margin: 2.8rem 2.8rem;
+.margin{
+    margin-top: 3rem;
 }
 
-
-.nuevos-ingresos{
-    margin: 2.8rem 2.8rem;        
-}
-
-
-h2{
-    font-family: 'Roboto', sans-serif; 
-    font-weight: 300;
-    font-size: 2.5rem;
-    color: #000000;
-}
+/* Termina banner y encabezado*/
 
 .container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
+    padding-bottom: 3rem;
 }
 
 
-figure img{
-    border-top-right-radius: 2.5rem;
-    border-top-left-radius: 2.5rem;
-    padding: .7rem;
-    width: 100%;
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0rem 2rem;
 }
+
+.productos figure{
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+    border-radius: 1rem;
+    padding: .5rem .5rem;
+    margin: 1rem 1rem;
+    width: 21%;
+}
+
+    .productos figure img{
+        padding: .2rem 0rem;
+        width: 80%;
+        margin-left: 1rem;
+    }
+
+        .productos figcaption{
+            color: black;
+            font-weight: 400;
+            font-size: 2rem;
+            margin: .3rem 1.5rem;
+        }
+
+            .productos figure p{
+                margin: .4rem .5rem;
+                padding: .2rem .5rem;
+                text-align: center;
+            }
+
+/*Termina productos y main*/
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    padding: 1.5rem 1rem;
+    align-items: center;
+}
+
+.footer-bg{
+    background-color: rgb(31, 31, 31);
+    opacity: 0.96;
+}
+
+    footer svg{
+        width: 2.2rem;
+        margin-left: 1.5rem;
+    }
+
+        footer ul li {
+            padding: .2rem;
+            margin: .2rem 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+            footer ul li a{
+                color: #000000;;
+            }
+
+/* Termina footer*/
+
+
+
+.quienes-somos h1{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    margin: 2rem 2rem;
+    font-size: 3.5rem;
+    color: var(--clr-01);
+    text-align: center;
+}
+        
+        .quienes-somos p{
+            text-align: center;
+        }
+        
+        
+.mision-vision{
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 0rem 1.2rem;   
+}
+
+.formulario div{
+    margin: .5rem .5rem;
+    width: 30%;
+    padding: .5rem .1rem;
+}
+
+
+.buton-submit{
+    margin: .5rem 1.8rem;
+}
+
+/* Termina pag quienes somos */
+
+.wrapper-all{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: antiquewhite;
+}
+
+
+.container-pc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+.productos-pc{
+    width: 40%;
+}
+
+
+
