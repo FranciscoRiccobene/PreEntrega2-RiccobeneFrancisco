@@ -22,14 +22,63 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
     margin: 0;
 }  
 
+
+body{
+    background-color: antiquewhite;
+}
+
+
 .text-color{
-    color: var(--clr-01)
+    color: #023859;
 }
 
 
 .text-center{
     text-align: center;
 }
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+p{
+    font-weight: 300;
+    margin: 1rem 1.2rem;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+
+h2{
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #000000;
+    margin: 1.5rem 1.2rem;
+}
+
+
+h3{
+    margin: 1rem 1.2rem; 
+    font-weight: 400;
+}
+
+
+h4{
+    margin: 1rem 1.2rem; 
+    font-weight: 300; 
+}
+
+
+    /* EMPIEZA PAG INCIO */
+
+    /*Empieza nav */
 
 
 .logo{
@@ -46,7 +95,7 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #000000;
     padding: .8rem;
     border-style: solid;
@@ -54,54 +103,15 @@ nav ul{
 }
     nav ul li a{
         text-decoration: none;
-        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: x-large;
-        color: var(--clr-03);
+        color: #038C7F;
     }
 
-        /*Termina nav*/
 
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
+/*Termina nav*/
 
 
-
-p{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    margin: 1rem 1.2rem;
-    font-size: 1.2rem;
-}
-
-
-h2{
-    font-family: 'Roboto', sans-serif; 
-    font-weight: 300;
-    font-size: 2.5rem;
-    color: #000000;
-    margin: 1.5rem 1.2rem;
-}
-
-
-h3{
-    font-family: 'Roboto', sans-serif;
-    margin: 1rem 1.2rem; 
-    font-weight: 400;
-}
-
-
-.banner{
-    width: 100%;
-    border-style: solid;
-    border-width: .1rem;
-    border-color: var(--clr-02);
-}
 
 .bg-color{
     background-color: black;
@@ -111,26 +121,41 @@ h3{
     background-color: antiquewhite;
 }
 
-.encabezado{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 3.5rem;
-    color: white;
-    background-color: black;
-    padding: 1rem;
-    border-style: solid;
-    border-width: 2rem;
-    border-color: black;
-    margin-top: -1rem;
-}
-
-
 .margin{
     margin-top: 3rem;
 }
 
+
+    /* Empieza banner y encabezado*/
+
+.banner{
+    width: 100%;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: #025959;
+}    
+
+
+.encabezado{
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: white;
+    background-color: black;
+    padding: 1.5rem;
+    border-style: solid;
+    border-width: 2rem;
+    border-color: black;
+    margin-top: -1rem;
+    margin-bottom: -1.4rem;
+}
+
+
 /* Termina banner y encabezado*/
+
+
+    /* Empieza productos y main */
+
 
 .container{
     display: flex;
@@ -180,6 +205,16 @@ h3{
 
 /*Termina productos y main*/
 
+
+    /* Empieza footer */
+
+
+    .footer-bg{
+        background-color: rgb(31, 31, 31);
+        opacity: 0.96;
+    }    
+
+
 footer{
     display:flex;
     justify-content: space-around;
@@ -187,15 +222,12 @@ footer{
     align-items: center;
 }
 
-.footer-bg{
-    background-color: rgb(31, 31, 31);
-    opacity: 0.96;
-}
 
     footer svg{
         width: 2.2rem;
         margin-left: 1.5rem;
     }
+
 
         footer ul li {
             padding: .2rem;
@@ -204,70 +236,156 @@ footer{
             font-weight: 400;
         }
 
+        
             footer ul li a{
-                color: #000000;;
+                color: #555151;;
             }
 
 /* Termina footer*/
 
 
+    /* Empieza pag quienes somos y formulario */
+
+
+.vision-mision{
+    width: 40%;
+}
+
 
 .quienes-somos h1{
-    font-family: 'Roboto', sans-serif; 
     font-weight: 500;
-    margin: 2rem 2rem;
+    margin: 2rem 1rem;
     font-size: 3.5rem;
-    color: var(--clr-01);
-    text-align: center;
+    color: #023859;
 }
-        
-        .quienes-somos p{
-            text-align: center;
-        }
-        
-        
-.mision-vision{
-    text-align: center;
-}
+                
 
 .formulario{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 30%;
     margin: 0rem 1.2rem;   
 }
 
 .formulario div{
-    margin: .5rem .5rem;
+    margin: .1rem .5rem;
     width: 30%;
-    padding: .5rem .1rem;
+    padding: .2rem .1rem;
 }
 
 
 .buton-submit{
-    margin: .5rem 1.8rem;
+    margin: .3rem 1.8rem;
 }
 
-/* Termina pag quienes somos */
+/* Termina pag quienes somos y formulario */
 
-.wrapper-all{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    background-color: antiquewhite;
+
+    /* Empieza productos main de Pcs-Notebooks-Telefonos */  
+
+
+section ul li{
+    font-weight: 300;
+    margin: .7rem 1.9rem;
+    font-size: .95rem;
 }
 
 
-.container-pc{
+span b{
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: .8rem .5rem;
+    display: block;
+}
+
+
+.productos-pc figure{
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+    border-radius: 1rem;
+    padding: .5rem .5rem;
+    margin: 1rem 1rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
 }
 
 
-.productos-pc{
-    width: 40%;
+    .productos-pc figure img{
+        width: 55%;
+        margin-bottom: .4rem;
+    }
+
+
+        .productos-pc figure figcaption{
+            color: black;
+            font-weight: 400;
+            font-size: 2rem;
+            margin: .5rem 1rem;
+            align-self: flex-start;
+        }
+
+
+        .productos-pc figure p{
+            margin-top: -.1rem;
+            text-align: center;
+        }
+
+
+
+.tienda{
+    display: grid;
+    grid-template-columns: 25% repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "filters uno dos"
+    "filters tres cuatro"
+    "filters cinco seis";
+    gap: 5px;
+    background-color: antiquewhite;
+    padding: 1rem;
 }
+
+
+.tienda .filters{
+    grid-area: filters;
+}
+
+
+.tienda .prod1{
+    grid-area: uno;
+}
+
+
+.tienda .prod2{
+    grid-area: dos;
+}
+
+
+.tienda .prod3{
+    grid-area: tres;
+}
+
+
+.tienda .prod4{
+    grid-area: cuatro;
+}
+
+
+.tienda .prod5{
+    grid-area: cinco;
+}
+
+
+.tienda .prod6{
+    grid-area: seis;
+}
+
+
+
 
 
 
