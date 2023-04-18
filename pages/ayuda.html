@@ -6,63 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QualyTech - PCs armadas y tecnología</title>
     <link rel="shortcut icon" href="../img/iconos/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="../index.html">
-            <img src="../img/iconos/logo.png" alt="Logo de QualyTech" class="logo"> 
-        </a>
-        <ul>
-            <li>
-                <a href="pcarmadas.html">PCs ARMADAS</a>
-            </li>
-            <li>
-                <a href="notebooks.html">NOTEBOOKS</a>
-            </li>
-            <li>
-                <a href="telefonos.html">TELÉFONOS</a>
-            </li>
-            <li>
-                <a href="quienesomos.html">QUIÉNES SOMOS</a>
-            </li>
-            <li>
-                <a href="ayuda.html">AYUDA</a>
-            </li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg botonera">
+        <div class="container-fluid d-flex align-items-end p-1">
+          <a class="navbar-brand" href="../index.html">
+            <img src="/img/iconos/logo.png" alt="Logo de QualyTech">
+          </a>
+          <button class="navbar-toggler mx-3 boton-desplegable" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../pages/pcarmadas.html">PCs ARMADAS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../pages/notebooks.html">NOTEBOOKS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../pages/telefonos.html">TELÉFONOS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../pages/quienesomos.html">QUIÉNES SOMOS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../pages/ayuda.html">AYUDA</a>
+              </li>
+            </ul>
+            <form class="input-group w-25 mx-3">
+                <button class="btn btn-search text-white" type="button" id="button-addon1">Buscar</button>
+                <input type="search" class="form-control" placeholder="Buscar aquí..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </form>
+            <button type="button" class="btn btn-dark btn-sesion">Iniciar sesión</button>
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-cart3 carrito-svg" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+          </div>
+        </div>
+      </nav>
     <!--Termina nav-->
-    <main>
+    <main>   
         <section>
-            <h2 class="text-color">Preguntas Frecuentes</h2>
-                <h3>Realizar un pedido
-                    <h4>
+            <h1 class="text-color mx-3 my-4 fw-light preg-frec">Preguntas Frecuentes</h1>
+                <h2 class="fs-2">Realizar un pedido
+                    <h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis ipsam aliquid. Ratione ut sint assumenda porro facilis numquam reiciendis harum facere illum voluptatum quas, sequi sed? Doloremque, neque dolore!</p>
-                    </h4>
-                </h3>
-                <h3>Precio
-                    <h4>
+                    </h3>
+                </h2>
+                <h2 class="fs-2">Precio
+                    <h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, expedita! Reprehenderit ex atque distinctio repellat iste ipsam consectetur rerum eveniet, omnis aliquid, enim officia maiores saepe sit amet ipsa cupiditate?</p>
-                    </h4>
-                </h3>
-                <h3>Formas de pago
-                    <h4>
+                    </h3>
+                </h2>
+                <h2 class="fs-2">Formas de pago
+                    <h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure hic nesciunt sapiente, maiores incidunt a velit pariatur reprehenderit non mollitia, adipisci iusto recusandae saepe molestiae. Animi nesciunt earum magnam itaques.</p>
-                    </h4>
-                </h3>
-                <h3>Envíos
-                    <h4>
+                    </h3>
+                </h2>
+                <h2 class="fs-2">Envíos
+                    <h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, natus cum. Consectetur perferendis dolorem inventore voluptatum harum exercitationem cupiditate similique nulla quae atque. Saepe eligendi, magnam sint voluptas sed corporis.</p>
-                    </h4>
-                </h3>
-                <h3>Facturación
-                    <h4>
+                    </h3>
+                </h2>
+                <h2 class="fs-2">Facturación
+                    <h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, numquam fuga? Inventore blanditiis autem maiores doloribus ullam pariatur vitae et ab sed earum, soluta illo, ipsa iusto minima eum ducimus.</p>
-                    </h4>
-                </h3>
+                    </h3>
+                </h2>
             <section>
         <div>
-            <h2 class="text-color">Contacto</h2>
+            <h2 class="text-color preg-frec">Contacto</h2>
         </div>
             <form action="envio.php">
                 <section class="formulario">
@@ -80,7 +96,7 @@
                     </div>
                     <div>
                         <label for="mensaje"></label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escríbenos tu mensaje"></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escríbenos tu mensaje..."></textarea>
                     </div>
                 </section>
                     <div class="buton-submit">
@@ -155,5 +171,6 @@
     <!--Termina ul I-->
     </footer>
     <!--Termina footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

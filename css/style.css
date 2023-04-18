@@ -1,18 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 
-:root{
-    --clr-main:#011F26;
-    --clr-01:#023859;
-    --clr-02:#025959;
-    --clr-03:#038C7F;
-    --clr-04:#011526;
-}
-
-
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -56,6 +45,12 @@ p{
 }
 
 
+h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
 h2{
     font-weight: 300;
     font-size: 2.5rem;
@@ -66,13 +61,13 @@ h2{
 
 h3{
     margin: 1rem 1.2rem; 
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
 h4{
     margin: 1rem 1.2rem; 
-    font-weight: 300; 
+    font-weight: 200; 
 }
 
 
@@ -81,36 +76,79 @@ h4{
     /*Empieza nav */
 
 
-.logo{
-    margin: 0.9rem;
-    opacity: 0.7;
-}
-
-
 nav{
-    background-color:rgb(31, 31, 31);
+    background-color:rgb(24, 24, 24);
 }
 
 
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #000000;
-    padding: .8rem;
-    border-style: solid;
-    border-width: .5rem;
+.navbar-nav:hover{
+    --bs-nav-link-hover-color: white;
 }
-    nav ul li a{
-        text-decoration: none;
-        font-weight: 500;
-        font-size: x-large;
-        color: #038C7F;
-    }
+
+
+.botonera li a{
+    color: #038C7F;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+
+.form-control{
+    font-size: .9rem;
+}
+
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+
+.btn-search{
+    background-color:rgb(24, 24, 24);
+    --bs-btn-border-color: white;
+}
+
+
+.btn-search:hover{
+    background-color:#0b4c46
+}
+
+
+.btn-sesion{
+    width: 10%;
+    background-color: rgb(24, 24, 24);
+    --bs-btn-border-color: white;
+    margin-left: .5rem;
+}
+
+
+.btn-sesion:hover{
+    background-color:#0b4c46;
+}
+
+
+.nav-link{
+    padding: 0;
+}
+
+
+.carrito-svg{
+    width: 4.5%;
+    height: 30px;
+    fill:#0b4c46;
+}
+
+
+.boton-desplegable{
+    background-color:#0b4c46;
+}
+
+.boton-desplegable:focus{
+    box-shadow: none;
+}
 
 
 /*Termina nav*/
-
 
 
 .bg-color{
@@ -132,22 +170,18 @@ nav ul{
     width: 100%;
     border-style: solid;
     border-width: .1rem;
-    border-color: #025959;
+    border-color: #000000;
 }    
 
 
 .encabezado{
     text-align: center;
-    font-weight: 700;
-    font-size: 3.5rem;
     color: white;
     background-color: black;
     padding: 1.5rem;
     border-style: solid;
-    border-width: 2rem;
+    border-width: 1rem;
     border-color: black;
-    margin-top: -1rem;
-    margin-bottom: -1.4rem;
 }
 
 
@@ -157,20 +191,11 @@ nav ul{
     /* Empieza productos y main */
 
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 3rem;
-}
-
-
 .productos{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0rem 2rem;
+    justify-content: space-evenly;
+    margin: 0rem 1.5rem;
 }
 
 .productos figure{
@@ -180,13 +205,12 @@ nav ul{
     border-color: gray;
     border-radius: 1rem;
     padding: .5rem .5rem;
-    margin: 1rem 1rem;
-    width: 21%;
+    margin: 1.5rem 1.5rem;
+    width: 100%;
 }
 
     .productos figure img{
         padding: .2rem 0rem;
-        width: 80%;
         margin-left: 1rem;
     }
 
@@ -210,7 +234,7 @@ nav ul{
 
 
     .footer-bg{
-        background-color: rgb(31, 31, 31);
+        background-color: rgb(24, 24, 24);
         opacity: 0.96;
     }    
 
@@ -238,7 +262,7 @@ footer{
 
         
             footer ul li a{
-                color: #555151;;
+                color: #555151;
             }
 
 /* Termina footer*/
@@ -281,7 +305,7 @@ footer{
 /* Termina pag quienes somos y formulario */
 
 
-    /* Empieza productos main de Pcs-Notebooks-Telefonos */  
+    /* Empieza productos main de Pcs armadas-Notebooks-Telefonos */  
 
 
 section ul li{
@@ -311,11 +335,13 @@ span b{
     flex-direction: column;
     align-items: center;
     width: 75%;
+    height: 100%;
+    justify-content: center;
 }
 
 
     .productos-pc figure img{
-        width: 55%;
+        width: 80%;
         margin-bottom: .4rem;
     }
 
@@ -325,7 +351,7 @@ span b{
             font-weight: 400;
             font-size: 2rem;
             margin: .5rem 1rem;
-            align-self: flex-start;
+            align-self: center;
         }
 
 
@@ -344,9 +370,10 @@ span b{
     "filters uno dos"
     "filters tres cuatro"
     "filters cinco seis";
-    gap: 5px;
+    row-gap: 20px;
     background-color: antiquewhite;
     padding: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -385,7 +412,375 @@ span b{
 }
 
 
+/* Empiezan los media queries */
+
+/* Breakpoint > 1400px */
+
+@media (min-width: 1401px) and (max-width: 1830px){
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .productos figure{
+            width: 40%;
+        }
+}
 
 
+/* Breakpoint 991px hasta 1400px */
 
+@media (min-width: 991px) and (max-width: 1400px){
+
+        /* Empieza media para navbar */
+    nav img{
+        width: 60%;
+    }    
+    .botonera ul li a{
+        font-size: .9rem;
+        margin-left: .1rem;
+    }
+    .botonera{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        nav ul{
+            width: 75%;
+        }
+            .btn-sesion{
+                width: 15%;
+                margin-right: .5rem;
+            }
+    
+        /* Termina media para navbar */
+        
+        /* Encabezado, h2 y h3 */
+    section h1{
+        font-size: 2rem;
+    }
+    
+    main h2{
+        font-size: 1.8rem;
+    }
+
+    .fs-2{
+        font-size: 1.5rem!important;
+    }
+
+    section h3 p{
+        font-size: 1rem;
+    }
+
+    .encabezado{
+        border-width: .2rem;
+    }
+
+        /* Empieza media para productos */    
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .productos figure{
+            width: 40%;
+        }
+            .productos img{
+                width: 70%;    
+            }      
+        /* Termina media para productos */ 
+        
+        /* Media de prodcutos para Pc armadas-Notebooks-Teléfonos */
+    .productos-pc figure{
+        width: 90%;
+    }        
+}
+
+
+/* Breakpoint 768px hasta 992px */
+
+@media (min-width: 767px) and (max-width: 992px){
+        
+        /* Empieza media nav */
+    .botonera{
+        display: flex;
+        flex-direction: column;
+    }
+        .botonera ul li{
+            padding: .3rem;
+        }
+    .input-group{
+        margin-bottom: .8rem;
+    }
+        .input-group button{
+             margin-left: -.5rem;
+        }
+    .btn-sesion{
+        width: 20%;
+        margin-right: .6rem;
+    }    
+        /* Termina media nav */
+
+        /* Media encabezado, h2 y h3 */
+    section h1{
+        font-size: 2rem;
+    }
+
+    .quienes-somos h1{
+        font-size: 3rem;
+    }
+    
+    main h2{
+        font-size: 1.8rem;
+    }
+
+    .t-center{
+        text-align: center;
+    }
+
+    .fs-2{
+        font-size: 1.5rem!important;
+    }
+
+    section h3 p{
+        font-size: 1rem;
+    }
+
+        /* Empieza media productos */
+        .productos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+            .productos figure{
+                width: 40%;
+            }
+                .productos img{
+                    width: 75%; 
+                }
+                    .productos figcaption{
+                        text-align: center;
+                        margin-left: 0;
+                    }
+                        .productos p{
+                            font-size: 1rem;
+                        }
+        /* Termina media productos */
+        
+        /*Empieza media para grid de tienda */
+    .tienda{
+        grid-template-columns: 35vh 1fr;
+        grid-template-rows: repeat(7,auto);
+        grid-template-areas: 
+        "filters uno"
+        "filters dos"
+        "filters tres"
+        "filters cuatro"
+        "filters cinco"
+        "filters seis";
+    }
+        /*Termina media para grid de tienda */
+
+        /*Empieza media footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+        footer svg{
+            width: 40px;
+            margin: .5rem 1.1rem;
+        }
+            footer ul li{
+                text-align: center;
+            }
+                footer div:nth-child(2){
+                    margin: 1rem 0;
+                    margin-right: .7rem;
+                }
+        /*Termina media footer */    
+}
+
+
+/* Breakpoint < 768px */
+
+@media (width < 768px){
+
+        /* Empieza media nav */
+    .botonera{
+        display: flex;
+        flex-direction: column;
+    }
+        .botonera ul li{
+            padding: .3rem;
+        }
+    .input-group{
+        margin-bottom: .8rem;
+    }
+        .input-group button{
+            margin-left: -.5rem;
+        }
+    .btn-sesion{
+        width: 30%;
+        margin-right: .6rem;
+    }
+    .carrito-svg{
+        width: 10%;
+    }    
+        /* Termina media nav */
+
+        /* Empieza media productos */
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .productos figure{
+            width: 100%;
+        }
+            .productos img{
+                width: 75%; 
+            }
+                .productos figcaption{
+                    text-align: center;
+                    margin-left: 0;
+                }
+                    .productos p{
+                        font-size: 1rem;
+                    }
+        /* Termina media productos */
+
+        /* Media encabezado, h2 y h3, pág quienes somos y ayuda */
+    section h1{
+        font-size: 1.4rem;
+    }
+
+    .encabezado{
+        border: none;
+    }
+        
+    main h2{
+        font-size: 1.7rem;
+    }
+    
+    .t-center{
+        text-align: center;
+    }
+    
+    .fs-2{
+        font-size: 1.5rem!important;
+    }
+    
+    section h3 p{
+        font-size: 1rem;
+    }
+    
+    .quienes-somos h1{
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .quienes-somos p{
+        font-size: 1rem;
+    }
+
+    .vision-mision{
+        width: 80%;
+    }
+
+    .vision-mision h2{
+        margin-left: 1.1rem;
+    }
+
+    .vision-mision p{
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .preg-frec{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 400!important;
+    }
+
+    .fs-2{
+        margin-left: 1.1rem;
+        font-weight: 300;
+        margin-bottom: 0;
+        font-size: 1.3rem!important;
+    }
+
+    section h3 p{
+        font-size: .9rem;
+    }
+
+
+        /*Empieza media para grid de tienda */
+    .tienda{
+        grid-template-columns: 18vh 1fr;
+        grid-template-rows: repeat(7,auto);
+        grid-template-areas: 
+        "filters uno"
+        "filters dos"
+        "filters tres"
+        "filters cuatro"
+        "filters cinco"
+        "filters seis";
+    }
+
+    .productos-pc figure{
+        width: 95%;
+        padding: 0;
+    }
+
+    .productos-pc figure img{
+        width: 50%;
+    }
+
+    .productos-pc figure figcaption{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .productos-pc figure p{
+        font-size: .8rem;
+        margin: 0rem 0.3rem;
+    }
+
+    section h2{
+        font-size: 1.3rem;
+        margin-left: 0;
+        font-weight: 400;
+    }
+
+    section span b{
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    section ul li{
+        margin: 0.2rem;
+        font-size: .9rem;
+    }
+        /*Termina media para grid de tienda */
+        
+        /*Empieza media footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+        footer svg{
+            width: 40px;
+            margin: .5rem .8rem;
+        }
+            footer ul li{
+                font-size: 1rem;
+                text-align: center;
+            }
+                footer div:nth-child(2){
+                    margin: 1rem 0;
+                    margin-right: .7rem;
+                }
+        /*Termina media footer */        
+}
 
