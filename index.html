@@ -50,9 +50,34 @@
     <!--Termina nav-->
     <main class="wrapper">
         <div class="bg-color">
-            <header>
-                <img src="./img/headers/banner7.jpg" alt="Banner de tecnología" class="banner">
-            </header>
+    <!--Empieza carrusel-->
+        <header id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/headers/banner-04.jpg" class="d-block w-100" alt="Banner IntelCore procesador">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/headers/banner-03.jpg" class="d-block w-100" alt="Banner tarjetas gráficas">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/headers/banner-01.jpg" class="d-block w-100" alt="Banner hyper-x periféricos">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </header>
+    <!--Termina carrusel-->
             <section class="encabezado">
                 <h1>¡QualyTech tecnología a tu servicio!</h1>
             </section>
