@@ -233,10 +233,15 @@ nav{
     /* Empieza footer */
 
 
-    .footer-bg{
-        background-color: rgb(24, 24, 24);
-        opacity: 0.96;
-    }    
+.footer-bg{
+    background-color: rgb(24, 24, 24);
+    opacity: 0.96;
+}
+
+
+.bi-instagram{
+    fill: #0b4c46;
+}
 
 
 footer{
@@ -262,7 +267,12 @@ footer{
 
         
             footer ul li a{
-                color: #555151;
+                color: #c8c8c8;
+            }
+
+              
+            footer ul li a:hover{
+                color: antiquewhite;
             }
 
 /* Termina footer*/
@@ -518,6 +528,7 @@ span b{
         }
     .input-group{
         margin-bottom: .8rem;
+        width: 75%!important;
     }
         .input-group button{
              margin-left: -.5rem;
@@ -620,16 +631,21 @@ span b{
         .botonera ul li{
             padding: .3rem;
         }
+
     .input-group{
         margin-bottom: .8rem;
+        width: 75%!important;
     }
         .input-group button{
             margin-left: -.5rem;
-        }
+        }   
+
     .btn-sesion{
         width: 30%;
         margin-right: .6rem;
+        font-size: .9rem;
     }
+
     .carrito-svg{
         width: 10%;
     }    

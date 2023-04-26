@@ -2,3 +2,5 @@ node_modules/
 *.log
 *.map
 *.vsc
+*.ia
+*.psd
