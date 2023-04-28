@@ -1,0 +1,40 @@
+//pag quienes somos y ayuda
+.vision-mision{
+    width: 40%;
+}
+
+
+.arreglo{
+    border: solid $greyColor 1px;
+    border-radius: 10px;
+    background-color:$bg2Color;
+}
+
+
+.quienes-somos{
+    h1{
+        font-weight:$fontSemibold;
+        margin: 2rem 1rem;
+        font-size: 3.5rem;
+        color:$textColor;
+    }
+}
+
+
+//formulario
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0rem 1.2rem;
+    div{
+        margin: .1rem .5rem;
+        width: 30%;
+        padding: .2rem .1rem;
+    }   
+}
+
+
+.buton-submit{
+    margin: .3rem 1.8rem;
+}

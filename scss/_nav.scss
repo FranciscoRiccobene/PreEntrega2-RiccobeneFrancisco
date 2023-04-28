@@ -1,0 +1,65 @@
+//nav
+.navbar-nav{
+    &:hover{
+        --bs-nav-link-hover-color: white;
+    }
+}
+
+
+.botonera{
+    li{
+        a{
+            color:$secondaryColor;
+            font-weight:$fontMedium;
+            font-size: 1.1rem;    
+        }
+    }
+}
+
+
+.form-control{
+    font-size: .9rem;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+
+.btn-search{
+    background-color:$bgColor;
+    --bs-btn-border-color: white;
+    &:hover{
+        background-color:$mainColor;
+    }
+}
+
+
+.btn-sesion{
+    width: 10%;
+    background-color:$bgColor;
+    --bs-btn-border-color: white;
+    margin-left: .5rem;
+    &:hover{
+        background-color:$mainColor;
+    }
+}
+
+
+.boton-desplegable{
+    background-color:$mainColor;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+
+.nav-link{
+    padding: 0;
+}
+
+
+.carrito-svg{
+    width: 4.5%;
+    height: 30px;
+    fill:$mainColor;
+}

@@ -1,0 +1,359 @@
+//media queries
+
+//breakpoint > 1400px
+@media (min-width: 1401px) and (max-width: 1830px){
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        figure{
+            width: 40%;
+        }
+    }
+}
+
+
+//breakpoint 991px hasta 1400px
+@media (min-width: 991px) and (max-width: 1400px){
+    //media nav
+    nav{
+        img{
+            width: 60%;
+        }
+        ul{
+            width: 75%;    
+        }
+    }
+    .botonera{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        ul{
+            li{
+                a{
+                    font-size: .9rem;
+                    margin-left: .1rem;    
+                }
+            }
+        }
+    }
+    .btn-sesion{
+        width: 15%;
+        margin-right: .5rem;
+    }
+    //encabezado, h2 y h3
+    section{
+        h1{
+            font-size: 2rem;
+        }
+        h3{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    main{
+        h2{
+            font-size: 1.8rem;
+        }
+    }
+    .fs-2{
+        font-size: 1.5rem!important;
+    }
+    .encabezado{
+        border-width: .2rem;
+    }
+    //media productos
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        figure{
+            width: 40%;
+        }
+        img{
+            width: 70%;
+        }
+    }
+    .productos-pc{
+        figure{
+            width: 90%;
+        }
+    }
+}
+
+
+//breakpoint 768px hasta 992px
+@media (min-width: 767px) and (max-width: 992px){
+    //nav
+    .botonera{
+        display: flex;
+        flex-direction: column;
+        ul{
+            li{
+                padding: .3rem;
+            }
+        }
+    }
+    .input-group{
+        margin-bottom: .8rem;
+        width: 75%!important;
+        button{
+            margin-left: -.5rem;
+        }
+    }
+    .btn-sesion{
+        width: 20%;
+        margin-right: .6rem;
+    }
+    //encabezado, h2 y h3
+    section{
+        h1{
+            font-size: 2rem;
+        }
+        h3{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    main{
+        h2{
+            font-size: 1.8rem;
+        }
+    } 
+    .t-center{
+        text-align: center;
+    }
+    .fs-2{
+        font-size: 1.5rem!important;
+    }
+    //productos
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        figure{
+            width: 40%;
+        }
+        img{
+            width: 75%;
+        }
+        figcaption{
+            text-align: center;
+            margin-left: 0;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    //grid de tienda
+    .tienda{
+        grid-template-columns: 35vh 1fr;
+        grid-template-rows: repeat(7,auto);
+        grid-template-areas: 
+        "filters uno"
+        "filters dos"
+        "filters tres"
+        "filters cuatro"
+        "filters cinco"
+        "filters seis";
+    }
+    //footer
+    footer{
+        display: flex;
+        flex-direction: column;
+        svg{
+            width: 40px;
+            margin: .5rem 1.1rem;
+        }
+        ul{
+            li{
+                text-align: center;
+            }
+        }
+        div:nth-child(2){
+            margin: 1rem 0;
+            margin-right: .7rem;
+        }
+    }
+}
+
+
+//breakpoint < 768px
+@media (width < 768px){
+    //nav
+    .botonera{
+        display: flex;
+        flex-direction: column;
+        ul{
+            li{
+                padding: .3rem;
+            }
+        }
+    }
+    .input-group{
+        margin-bottom: .8rem;
+        width: 90%!important;
+        button{
+            margin-left: -.5rem;
+        }
+    }
+    .btn-sesion{
+        width: 35%;
+        margin-right: .6rem;
+        font-size: .9rem;
+    }
+    .carrito-svg{
+        width: 10%;
+    }
+    //productos
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        figure{
+            width: 100%;
+        }
+        img{
+            width: 75%;
+        }
+        figcaption{
+            text-align: center;
+            margin-left: 0;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .productos-pc{
+        figure{
+            width: 95%;
+            padding: 0;
+            img{
+                width: 50%;
+            }
+            figcaption{
+                font-size: 1.2rem;
+                margin: 0;
+            }
+            p{
+                font-size: .8rem;
+                margin: 0rem 0.3rem;
+            }
+        }
+    }
+    //encabezado, h2 y h3, quienes somos y ayuda
+    section{
+        h1{
+            font-size: 1.4rem;
+        }
+        h3{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    main{
+        h2{
+            font-size: 1.7rem;
+        }
+    }
+    .t-center{
+        text-align: center;
+    }
+    .fs-2{
+        font-size: 1.5rem!important;
+    }
+    .encabezado{
+        border: none;
+    }
+    .quienes-somos{
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .vision-mision{
+        width: 80%;
+        h2{
+            margin-left: 1.1rem;
+        }
+        p{
+            font-size: 1rem;
+            margin-top: 0;
+        }
+    }
+    .preg-frec{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight:$fontMedium!important;
+    }
+    .fs-2{
+        margin-left: 1.1rem;
+        font-weight:$fontNormal;
+        margin-bottom: 0;
+        font-size: 1.3rem!important;
+    }
+    div{
+        h3{
+            p{
+                font-size: .9rem;
+            }
+        }
+    }
+    //grid de tienda
+    .tienda{
+        grid-template-columns: 18vh 1fr;
+        grid-template-rows: repeat(7,auto);
+        grid-template-areas: 
+        "filters uno"
+        "filters dos"
+        "filters tres"
+        "filters cuatro"
+        "filters cinco"
+        "filters seis";
+    }
+    section{
+        h2{
+            font-size: 1.3rem;
+            margin-left: 0;
+            font-weight:$fontMedium;
+        }
+        span{
+            b{
+                margin: 0;
+                font-size: 1rem;
+                font-weight:$fontMedium;
+            }
+        }
+        ul{
+            li{
+                margin: 0.2rem;
+                font-size: .9rem;
+            }
+        }
+    }
+    //footer
+    footer{
+        display: flex;
+        flex-direction: column;
+        svg{
+            width: 40px;
+            margin: .5rem .8rem;
+        }
+        ul{
+            li{
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+        div:nth-child(2){
+            margin: 1rem 0;
+            margin-right: .7rem;
+        }
+    }
+}

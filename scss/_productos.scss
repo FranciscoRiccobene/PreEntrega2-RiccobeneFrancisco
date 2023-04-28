@@ -1,0 +1,105 @@
+//productos página principal
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0rem 1.5rem;
+    figure{
+        background-color:$whiteColor;
+        border: solid;
+        border-width: 0.1rem;
+        border-color:$greyColor;
+        border-radius: 1rem;
+        padding: .5rem .5rem;
+        margin: 1.5rem 1.5rem;
+        width: 100%;
+        img{
+            padding: .2rem 0rem;
+            margin-left: 1rem;
+        }
+        p{
+            margin: .4rem .5rem;
+            padding: .2rem .5rem;
+            text-align: center;
+        }
+    }
+    figcaption{
+        color:$darkColor;
+        font-weight:$fontMedium;
+        font-size: 2rem;
+        margin: .3rem 1.5rem;
+    }
+}
+
+
+//productos pcs armadas-notebooks-teléfonos
+.productos-pc{
+    figure{
+        background-color:$whiteColor;
+        border: solid;
+        border-width: 0.1rem;
+        border-color:$greyColor;
+        border-radius: 1rem;
+        padding: .5rem .5rem;
+        margin: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        height: 100%;
+        justify-content: center;
+        img{
+            width: 80%;
+            margin-bottom: .4rem;
+        }
+        figcaption{
+            color:$darkColor;
+            font-weight:$fontMedium;
+            font-size: 2rem;
+            margin: .5rem 1rem;
+            margin-left: .5rem;
+            align-self: center;
+        }
+        p{
+            margin-top: -.1rem;
+            text-align: center;
+        }
+    }
+}
+
+
+//grid de tienda
+.tienda{
+    display: grid;
+    grid-template-columns: 25% repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "filters uno dos"
+    "filters tres cuatro"
+    "filters cinco seis";
+    row-gap: 20px;
+    background-color:$keyColor;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    .filters{
+        grid-area: filters;
+    }
+    .prod1{
+        grid-area: uno;
+    }
+    .prod2{
+        grid-area: dos;
+    }
+    .prod3{
+        grid-area: tres;
+    }
+    .prod4{
+        grid-area: cuatro;
+    }
+    .prod5{
+        grid-area: cinco;
+    }
+    .prod6{
+        grid-area: seis;
+    }
+}
