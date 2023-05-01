@@ -133,7 +133,7 @@ footer ul li a:hover {
 }
 
 .bi-instagram {
-  fill: antiquewhite;
+  fill: #c8c8c8;
 }
 
 .navbar-nav:hover {
@@ -301,20 +301,27 @@ footer ul li a:hover {
   color: #023859;
 }
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  margin: 0rem 1.2rem;
-}
-.formulario div {
-  margin: 0.1rem 0.5rem;
-  width: 30%;
-  padding: 0.2rem 0.1rem;
+.bg-form {
+  background-color: rgb(250, 229, 201);
 }
 
-.buton-submit {
-  margin: 0.3rem 1.8rem;
+.btn-submit {
+  background-color: #023859;
+  color: white;
+  width: 15%;
+}
+.btn-submit:hover {
+  background-color: #024772;
+  color: white;
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.form-select:focus {
+  box-shadow: none;
 }
 
 @media (min-width: 1401px) and (max-width: 1830px) {
@@ -358,6 +365,9 @@ footer ul li a:hover {
   }
   .fs-2 {
     font-size: 1.5rem !important;
+  }
+  .btn-submit {
+    width: 25%;
   }
   .encabezado {
     border-width: 0.2rem;
@@ -410,6 +420,13 @@ footer ul li a:hover {
   }
   .fs-2 {
     font-size: 1.5rem !important;
+  }
+  .btn-submit {
+    width: 25%;
+  }
+  .btn-flex {
+    display: flex;
+    justify-content: center;
   }
   .productos {
     display: flex;
@@ -554,6 +571,9 @@ footer ul li a:hover {
   }
   div h3 p {
     font-size: 0.9rem;
+  }
+  .btn-submit {
+    width: 100%;
   }
   .tienda {
     grid-template-columns: 18vh 1fr;

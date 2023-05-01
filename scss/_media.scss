@@ -60,6 +60,9 @@
     .fs-2{
         font-size: 1.5rem!important;
     }
+    .btn-submit{
+        width: 25%;
+    }
     .encabezado{
         border-width: .2rem;
     }
@@ -127,6 +130,13 @@
     }
     .fs-2{
         font-size: 1.5rem!important;
+    }
+    .btn-submit{
+        width: 25%;
+    }
+    .btn-flex{
+        display: flex;
+        justify-content: center;
     }
     //productos
     .productos{
@@ -304,6 +314,9 @@
                 font-size: .9rem;
             }
         }
+    }
+    .btn-submit{
+        width: 100%;
     }
     //grid de tienda
     .tienda{

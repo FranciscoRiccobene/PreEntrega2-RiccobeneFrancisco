@@ -22,19 +22,30 @@
 
 
 //formulario
-.formulario{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin: 0rem 1.2rem;
-    div{
-        margin: .1rem .5rem;
-        width: 30%;
-        padding: .2rem .1rem;
-    }   
+.bg-form{
+    background-color:rgb(250, 229, 201);
 }
 
 
-.buton-submit{
-    margin: .3rem 1.8rem;
+.btn-submit{
+    background-color:$textColor;
+    color: $whiteColor;
+    width: 15%;
+    &:hover{
+        background-color:#024772;
+        color: $whiteColor;
+    }
+}
+
+
+.btn-flex{
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-select{
+    &:focus{
+        box-shadow: none;
+    }
 }
