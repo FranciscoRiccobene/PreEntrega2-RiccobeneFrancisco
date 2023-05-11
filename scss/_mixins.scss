@@ -1,0 +1,9 @@
+//mixin textos
+@mixin textos ($size,$color,$align){
+    font-family: $mainFont;
+    font-size: $size;
+    color: $color;
+    @if $align == center {text-align: center;}
+    @else if $align == right {text-align: right;}
+    @else if $align == left {text-align: left;}
+}

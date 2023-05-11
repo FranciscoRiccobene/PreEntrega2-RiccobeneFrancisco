@@ -9,7 +9,7 @@
 .botonera{
     li{
         a{
-            color:$secondaryColor;
+            color:rgb(202, 202, 202);
             font-weight:$fontMedium;
             font-size: 1.1rem;    
         }
@@ -29,7 +29,7 @@
     background-color:$bgColor;
     --bs-btn-border-color: white;
     &:hover{
-        background-color:$mainColor;
+        background-color:$btn2Color;
     }
 }
 
@@ -40,13 +40,13 @@
     --bs-btn-border-color: white;
     margin-left: .5rem;
     &:hover{
-        background-color:$mainColor;
+        background-color:$btn2Color;
     }
 }
 
 
 .boton-desplegable{
-    background-color:$mainColor;
+    background-color:rgb(254, 244, 231);
     &:focus{
         box-shadow: none;
     }
@@ -61,5 +61,5 @@
 .carrito-svg{
     width: 4.5%;
     height: 30px;
-    fill:$mainColor;
+    fill:$btn2Color;
 }

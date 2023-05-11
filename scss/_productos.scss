@@ -3,67 +3,61 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 0rem 1.5rem;
-    figure{
-        background-color:$whiteColor;
-        border: solid;
-        border-width: 0.1rem;
-        border-color:$greyColor;
-        border-radius: 1rem;
-        padding: .5rem .5rem;
-        margin: 1.5rem 1.5rem;
-        width: 100%;
-        img{
-            padding: .2rem 0rem;
-            margin-left: 1rem;
-        }
-        p{
-            margin: .4rem .5rem;
-            padding: .2rem .5rem;
-            text-align: center;
+    margin: 1.5rem 1.5rem;
+    gap: 30px;
+}
+
+//filtros
+.filters-fix{
+    border: 1px solid $greyColor;
+    border-radius: 5px;
+    background-color: rgb(186, 186, 186);
+    padding: .5rem;
+    select{
+        background-color: $btn2Color;
+        color: $whiteColor;
+        &:focus{
+            box-shadow: none;
         }
     }
-    figcaption{
-        color:$darkColor;
-        font-weight:$fontMedium;
-        font-size: 2rem;
-        margin: .3rem 1.5rem;
+    ul{
+        li{
+            a{
+                color: $darkColor;
+                &:hover{
+                    color: $whiteColor;
+                }
+            }
+        }
     }
 }
 
 
 //productos pcs armadas-notebooks-teléfonos
-.productos-pc{
-    figure{
-        background-color:$whiteColor;
-        border: solid;
-        border-width: 0.1rem;
-        border-color:$greyColor;
-        border-radius: 1rem;
-        padding: .5rem .5rem;
-        margin: 1rem 1rem;
+.card{
+    width: 90%;
+    border: 1px $greyColor solid;
+    img{
+        width: 90%;
+        margin: .8rem .8rem;
+    }
+    a{
+        width: 50%!important;
+        @extend .btn-submit;
+    }
+    p{
+        @include textos(1.1rem,$darkColor,center)
+    }
+    .bg-card{
+        background-color: rgb(186, 186, 186);
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        width: 75%;
-        height: 100%;
-        justify-content: center;
-        img{
-            width: 80%;
-            margin-bottom: .4rem;
-        }
-        figcaption{
-            color:$darkColor;
-            font-weight:$fontMedium;
-            font-size: 2rem;
-            margin: .5rem 1rem;
-            margin-left: .5rem;
-            align-self: center;
-        }
-        p{
-            margin-top: -.1rem;
-            text-align: center;
-        }
+    }
+    .img-fix{
+        width: 70%;
+        margin-left: 3rem;
     }
 }
 
@@ -71,13 +65,13 @@
 //grid de tienda
 .tienda{
     display: grid;
-    grid-template-columns: 25% repeat(2,1fr);
+    grid-template-columns: 20% repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas:
-    "filters uno dos"
-    "filters tres cuatro"
-    "filters cinco seis";
-    row-gap: 20px;
+    "filters uno dos tres"
+    "filters cuatro cinco seis"
+    "filters siete ocho nueve";
+    gap: 20px;
     background-color:$keyColor;
     padding: 1rem;
     margin-bottom: 1.5rem;
@@ -101,5 +95,14 @@
     }
     .prod6{
         grid-area: seis;
+    }
+    .prod7{
+        grid-area: siete;
+    }
+    .prod8{
+        grid-area: ocho;
+    }
+    .prod9{
+        grid-area: nueve;
     }
 }

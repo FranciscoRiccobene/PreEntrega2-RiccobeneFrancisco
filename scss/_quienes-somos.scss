@@ -8,22 +8,60 @@
     border: solid $greyColor 1px;
     border-radius: 10px;
     background-color:$bg2Color;
+    margin: 2rem 7rem;
+}
+
+
+.text{
+    h1{
+        @include textos(2.5rem,$textColor,center)
+    }
+    h2{
+        @include textos(2.5rem,$textColor,center)
+    }
+    h3{
+        @include textos(1.5rem,$textColor,center)
+    }
+    p{
+        @include textos(1.2rem,$darkColor,center)
+    }
 }
 
 
 .quienes-somos{
     h1{
+        @include textos(3.5rem,$textColor,left);
         font-weight:$fontSemibold;
         margin: 2rem 1rem;
-        font-size: 3.5rem;
-        color:$textColor;
+    }
+}
+
+
+.accordion-bg{
+    background-color: $bg2Color;
+    button{
+        background-color: $bg3Color;
+        --bs-accordion-active-bg: rgb(248, 217, 176);
+        border: 1px solid $greyColor;
+        &:focus{
+            box-shadow: none;
+            background-color: $bg3Color;
+            color: $darkColor;
+            border: 1px solid $greyColor;
+        }
+        &:active{
+            background-color: $bg3Color;
+        }
+    }
+    h2{
+        margin: 0rem!important;
     }
 }
 
 
 //formulario
 .bg-form{
-    background-color:rgb(250, 229, 201);
+    background-color:$bg2Color;
 }
 
 
@@ -32,7 +70,7 @@
     color: $whiteColor;
     width: 15%;
     &:hover{
-        background-color:#024772;
+        background-color:$btn2Color;
         color: $whiteColor;
     }
 }

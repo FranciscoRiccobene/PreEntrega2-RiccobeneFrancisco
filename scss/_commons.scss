@@ -16,16 +16,6 @@ body{
 }
 
 
-.text-color{
-    color:$textColor;
-}
-
-
-.text-center{
-    text-align: center;
-}
-
-
 ul{
     list-style: none;
 }
@@ -45,7 +35,7 @@ p{
 
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight:$fontSemibold;
 }
 
@@ -75,6 +65,13 @@ nav{
 }
 
 
+header{
+    img{
+        height: 500px;
+    }
+}
+
+
 .bg-color{
     background-color:$darkColor;
 }
@@ -90,18 +87,24 @@ nav{
 }
 
 
-section ul li{
-    font-weight:$fontNormal;
-    margin: .7rem 1.9rem;
-    font-size: .95rem;
+section{
+    ul{
+        li{
+            font-weight:$fontNormal;
+            margin: .7rem 1.9rem;
+            font-size: .95rem;
+        }
+    }  
 }
 
 
-span b{
-    font-weight:$fontNormal;
-    font-size: 1.3rem;
-    margin: .8rem .5rem;
-    display: block;
+span{
+    b{
+        font-weight:$fontNormal;
+        font-size: 1.3rem;
+        margin: .8rem .5rem;
+        display: block;
+    }
 }
 
 //banner y encabezado
@@ -118,9 +121,9 @@ span b{
     text-align: center;
     color:$whiteColor;
     background-color:$darkColor;
-    padding: 1.5rem;
+    padding: .5rem;
     border-style: solid;
-    border-width: 1rem;
+    border-width: .8rem;
     border-color:$darkColor;
 }
 
@@ -128,9 +131,11 @@ span b{
 
 footer{
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 1.5rem 1rem;
     align-items: center;
+    background-color:$bgColor;
+    opacity: 0.96;
     svg{
         width: 2.2rem;
         margin-left: 1.5rem;
@@ -149,15 +154,29 @@ footer{
             }
         }
     }
+    .div-border{
+        border-left: solid 2px $greyColor;
+        padding: 0 2rem;
+        margin: 0 1rem;
+    }
+    .bi-instagram{
+        fill:#c8c8c8;
+    }
+}
+
+//pagina error 404
+.error-404{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img{
+        height: 700px;
+    }
 }
 
 
-.footer-bg{
-    background-color:$bgColor;
-    opacity: 0.96;
-}
-
-
-.bi-instagram{
-    fill:#c8c8c8;
+.btn-error{
+    @extend .btn-submit;
+    width: 250px!important;
+    margin-bottom: 2rem;
 }

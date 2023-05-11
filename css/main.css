@@ -13,14 +13,6 @@ body {
   background-color: antiquewhite;
 }
 
-.text-color {
-  color: #023859;
-}
-
-.text-center {
-  text-align: center;
-}
-
 ul {
   list-style: none;
 }
@@ -37,7 +29,7 @@ p {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -60,6 +52,10 @@ h4 {
 
 nav {
   background-color: rgb(24, 24, 24);
+}
+
+header img {
+  height: 500px;
 }
 
 .bg-color {
@@ -98,17 +94,19 @@ span b {
   text-align: center;
   color: white;
   background-color: black;
-  padding: 1.5rem;
+  padding: 0.5rem;
   border-style: solid;
-  border-width: 1rem;
+  border-width: 0.8rem;
   border-color: black;
 }
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1.5rem 1rem;
   align-items: center;
+  background-color: rgb(24, 24, 24);
+  opacity: 0.96;
 }
 footer svg {
   width: 2.2rem;
@@ -126,14 +124,27 @@ footer ul li a {
 footer ul li a:hover {
   color: antiquewhite;
 }
-
-.footer-bg {
-  background-color: rgb(24, 24, 24);
-  opacity: 0.96;
+footer .div-border {
+  border-left: solid 2px grey;
+  padding: 0 2rem;
+  margin: 0 1rem;
+}
+footer .bi-instagram {
+  fill: #c8c8c8;
 }
 
-.bi-instagram {
-  fill: #c8c8c8;
+.error-404 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.error-404 img {
+  height: 700px;
+}
+
+.btn-error {
+  width: 250px !important;
+  margin-bottom: 2rem;
 }
 
 .navbar-nav:hover {
@@ -141,7 +152,7 @@ footer ul li a:hover {
 }
 
 .botonera li a {
-  color: #038C7F;
+  color: rgb(202, 202, 202);
   font-weight: 400;
   font-size: 1.1rem;
 }
@@ -158,7 +169,7 @@ footer ul li a:hover {
   --bs-btn-border-color: white;
 }
 .btn-search:hover {
-  background-color: #0b4c46;
+  background-color: #024772;
 }
 
 .btn-sesion {
@@ -168,11 +179,11 @@ footer ul li a:hover {
   margin-left: 0.5rem;
 }
 .btn-sesion:hover {
-  background-color: #0b4c46;
+  background-color: #024772;
 }
 
 .boton-desplegable {
-  background-color: #0b4c46;
+  background-color: rgb(254, 244, 231);
 }
 .boton-desplegable:focus {
   box-shadow: none;
@@ -185,79 +196,72 @@ footer ul li a:hover {
 .carrito-svg {
   width: 4.5%;
   height: 30px;
-  fill: #0b4c46;
+  fill: #024772;
 }
 
 .productos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0rem 1.5rem;
-}
-.productos figure {
-  background-color: white;
-  border: solid;
-  border-width: 0.1rem;
-  border-color: grey;
-  border-radius: 1rem;
-  padding: 0.5rem 0.5rem;
   margin: 1.5rem 1.5rem;
-  width: 100%;
-}
-.productos figure img {
-  padding: 0.2rem 0rem;
-  margin-left: 1rem;
-}
-.productos figure p {
-  margin: 0.4rem 0.5rem;
-  padding: 0.2rem 0.5rem;
-  text-align: center;
-}
-.productos figcaption {
-  color: black;
-  font-weight: 400;
-  font-size: 2rem;
-  margin: 0.3rem 1.5rem;
+  gap: 30px;
 }
 
-.productos-pc figure {
-  background-color: white;
-  border: solid;
-  border-width: 0.1rem;
-  border-color: grey;
-  border-radius: 1rem;
-  padding: 0.5rem 0.5rem;
-  margin: 1rem 1rem;
+.filters-fix {
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: rgb(186, 186, 186);
+  padding: 0.5rem;
+}
+.filters-fix select {
+  background-color: #024772;
+  color: white;
+}
+.filters-fix select:focus {
+  box-shadow: none;
+}
+.filters-fix ul li a {
+  color: black;
+}
+.filters-fix ul li a:hover {
+  color: white;
+}
+
+.card {
+  width: 90%;
+  border: 1px grey solid;
+}
+.card img {
+  width: 90%;
+  margin: 0.8rem 0.8rem;
+}
+.card a {
+  width: 50% !important;
+}
+.card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: black;
+  text-align: center;
+}
+.card .bg-card {
+  background-color: rgb(186, 186, 186);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 75%;
-  height: 100%;
-  justify-content: center;
 }
-.productos-pc figure img {
-  width: 80%;
-  margin-bottom: 0.4rem;
-}
-.productos-pc figure figcaption {
-  color: black;
-  font-weight: 400;
-  font-size: 2rem;
-  margin: 0.5rem 1rem;
-  margin-left: 0.5rem;
-  align-self: center;
-}
-.productos-pc figure p {
-  margin-top: -0.1rem;
-  text-align: center;
+.card .img-fix {
+  width: 70%;
+  margin-left: 3rem;
 }
 
 .tienda {
   display: grid;
-  grid-template-columns: 25% repeat(2, 1fr);
+  grid-template-columns: 20% repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "filters uno dos" "filters tres cuatro" "filters cinco seis";
-  row-gap: 20px;
+  grid-template-areas: "filters uno dos tres" "filters cuatro cinco seis" "filters siete ocho nueve";
+  gap: 20px;
   background-color: antiquewhite;
   padding: 1rem;
   margin-bottom: 1.5rem;
@@ -283,6 +287,15 @@ footer ul li a:hover {
 .tienda .prod6 {
   grid-area: seis;
 }
+.tienda .prod7 {
+  grid-area: siete;
+}
+.tienda .prod8 {
+  grid-area: ocho;
+}
+.tienda .prod9 {
+  grid-area: nueve;
+}
 
 .vision-mision {
   width: 40%;
@@ -292,25 +305,74 @@ footer ul li a:hover {
   border: solid grey 1px;
   border-radius: 10px;
   background-color: rgb(250, 229, 201);
+  margin: 2rem 7rem;
+}
+
+.text h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  color: #023859;
+  text-align: center;
+}
+.text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  color: #023859;
+  text-align: center;
+}
+.text h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #023859;
+  text-align: center;
+}
+.text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
 }
 
 .quienes-somos h1 {
-  font-weight: 500;
-  margin: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
   color: #023859;
+  text-align: left;
+  font-weight: 500;
+  margin: 2rem 1rem;
+}
+
+.accordion-bg {
+  background-color: rgb(250, 229, 201);
+}
+.accordion-bg button {
+  background-color: rgb(248, 217, 176);
+  --bs-accordion-active-bg: rgb(248, 217, 176);
+  border: 1px solid grey;
+}
+.accordion-bg button:focus {
+  box-shadow: none;
+  background-color: rgb(248, 217, 176);
+  color: black;
+  border: 1px solid grey;
+}
+.accordion-bg button:active {
+  background-color: rgb(248, 217, 176);
+}
+.accordion-bg h2 {
+  margin: 0rem !important;
 }
 
 .bg-form {
   background-color: rgb(250, 229, 201);
 }
 
-.btn-submit {
+.btn-submit, .btn-error, .card a {
   background-color: #023859;
   color: white;
   width: 15%;
 }
-.btn-submit:hover {
+.btn-submit:hover, .btn-error:hover, .card a:hover {
   background-color: #024772;
   color: white;
 }
@@ -329,9 +391,13 @@ footer ul li a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
   }
-  .productos figure {
-    width: 40%;
+  .productos .card-index {
+    width: 22%;
+  }
+  .card {
+    width: 100%;
   }
 }
 @media (min-width: 991px) and (max-width: 1400px) {
@@ -354,6 +420,9 @@ footer ul li a:hover {
     width: 15%;
     margin-right: 0.5rem;
   }
+  header img {
+    height: 350px;
+  }
   section h1 {
     font-size: 2rem;
   }
@@ -366,25 +435,33 @@ footer ul li a:hover {
   .fs-2 {
     font-size: 1.5rem !important;
   }
-  .btn-submit {
+  .btn-submit, .btn-error, .card a {
     width: 25%;
   }
   .encabezado {
     border-width: 0.2rem;
+    padding: 1rem;
+  }
+  .vision-mision {
+    width: 70%;
   }
   .productos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .productos figure {
-    width: 40%;
+  .productos .card-index {
+    width: 22%;
   }
-  .productos img {
-    width: 70%;
+  .card {
+    width: 100%;
   }
-  .productos-pc figure {
-    width: 90%;
+  .card p {
+    margin: 0.3rem;
+    font-size: 1rem;
+  }
+  .card a {
+    width: 100% !important;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
@@ -397,7 +474,7 @@ footer ul li a:hover {
   }
   .input-group {
     margin-bottom: 0.8rem;
-    width: 75% !important;
+    width: 97% !important;
   }
   .input-group button {
     margin-left: -0.5rem;
@@ -405,6 +482,13 @@ footer ul li a:hover {
   .btn-sesion {
     width: 20%;
     margin-right: 0.6rem;
+  }
+  .encabezado {
+    border: none;
+    padding: 1rem;
+  }
+  header img {
+    height: 280px;
   }
   section h1 {
     font-size: 2rem;
@@ -415,13 +499,16 @@ footer ul li a:hover {
   main h2 {
     font-size: 1.8rem;
   }
-  .t-center {
-    text-align: center;
+  .arreglo {
+    margin: 2rem 2rem;
+  }
+  .vision-mision {
+    width: 90%;
   }
   .fs-2 {
     font-size: 1.5rem !important;
   }
-  .btn-submit {
+  .btn-submit, .btn-error, .card a {
     width: 25%;
   }
   .btn-flex {
@@ -433,23 +520,22 @@ footer ul li a:hover {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .productos figure {
-    width: 40%;
+  .productos .card-index {
+    width: 45%;
   }
-  .productos img {
-    width: 75%;
+  .card {
+    width: 100%;
   }
-  .productos figcaption {
-    text-align: center;
-    margin-left: 0;
-  }
-  .productos p {
+  .card p {
     font-size: 1rem;
   }
+  .card a {
+    width: 100% !important;
+  }
   .tienda {
-    grid-template-columns: 35vh 1fr;
-    grid-template-rows: repeat(7, auto);
-    grid-template-areas: "filters uno" "filters dos" "filters tres" "filters cuatro" "filters cinco" "filters seis";
+    grid-template-columns: 30vh repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "filters uno dos" "filters tres cuatro" "filters cinco seis" "filters siete ocho" "filters nueve .";
   }
   footer {
     display: flex;
@@ -466,6 +552,9 @@ footer ul li a:hover {
     margin: 1rem 0;
     margin-right: 0.7rem;
   }
+  footer .div-border {
+    border: none;
+  }
 }
 @media (width < 768px) {
   .botonera {
@@ -477,13 +566,13 @@ footer ul li a:hover {
   }
   .input-group {
     margin-bottom: 0.8rem;
-    width: 90% !important;
+    width: 93% !important;
   }
   .input-group button {
     margin-left: -0.5rem;
   }
   .btn-sesion {
-    width: 35%;
+    width: 40%;
     margin-right: 0.6rem;
     font-size: 0.9rem;
   }
@@ -495,36 +584,11 @@ footer ul li a:hover {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .productos figure {
-    width: 100%;
-  }
-  .productos img {
-    width: 75%;
-  }
-  .productos figcaption {
-    text-align: center;
-    margin-left: 0;
-  }
-  .productos p {
-    font-size: 1rem;
-  }
-  .productos-pc figure {
-    width: 95%;
-    padding: 0;
-  }
-  .productos-pc figure img {
-    width: 50%;
-  }
-  .productos-pc figure figcaption {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  .productos-pc figure p {
-    font-size: 0.8rem;
-    margin: 0rem 0.3rem;
+  header img {
+    height: 170px;
   }
   section h1 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   section h3 p {
     font-size: 1rem;
@@ -532,36 +596,31 @@ footer ul li a:hover {
   main h2 {
     font-size: 1.7rem;
   }
-  .t-center {
-    text-align: center;
-  }
   .fs-2 {
     font-size: 1.5rem !important;
   }
   .encabezado {
     border: none;
+    padding: 1rem;
   }
   .quienes-somos h1 {
     font-size: 2.5rem;
     margin-bottom: 0;
+    margin: 0 1rem;
   }
   .quienes-somos p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .vision-mision {
-    width: 80%;
+    width: 100%;
   }
   .vision-mision h2 {
     margin-left: 1.1rem;
-  }
-  .vision-mision p {
-    font-size: 1rem;
     margin-top: 0;
   }
-  .preg-frec {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 400 !important;
+  .vision-mision p {
+    font-size: 0.9rem;
+    margin-top: 0;
   }
   .fs-2 {
     margin-left: 1.1rem;
@@ -572,13 +631,44 @@ footer ul li a:hover {
   div h3 p {
     font-size: 0.9rem;
   }
-  .btn-submit {
+  .btn-submit, .btn-error, .card a {
     width: 100%;
   }
+  .arreglo {
+    margin: 1rem;
+  }
+  .text h2 {
+    font-weight: 300;
+  }
   .tienda {
-    grid-template-columns: 18vh 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(7, auto);
-    grid-template-areas: "filters uno" "filters dos" "filters tres" "filters cuatro" "filters cinco" "filters seis";
+    grid-template-areas: "filters" "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve";
+  }
+  .filters-fix span {
+    display: none;
+  }
+  .filters-fix ul {
+    display: none;
+  }
+  .filters-fix h2 {
+    text-align: center;
+    margin: 0.5rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .card p {
+    font-size: 0.8rem;
+    margin: 0.4rem 0;
+  }
+  .card a {
+    width: 100% !important;
+    margin: 0;
+  }
+  .card h3 {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
   }
   section h2 {
     font-size: 1.3rem;
@@ -609,6 +699,25 @@ footer ul li a:hover {
   footer div:nth-child(2) {
     margin: 1rem 0;
     margin-right: 0.7rem;
+  }
+  footer .div-border {
+    border: none;
+  }
+  .error-404 img {
+    height: 400px;
+  }
+}
+@media (width < 400px) {
+  .error-404 img {
+    height: 300px;
+  }
+  .btn-error {
+    width: 200px !important;
+  }
+}
+@media (min-width: 450px) and (max-width: 767px) {
+  .btn-sesion {
+    width: 28%;
   }
 }
 

@@ -6,9 +6,13 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        figure{
-            width: 40%;
+        margin-bottom: 1rem;
+        .card-index{
+            width: 22%;
         }
+    }
+    .card{
+        width: 100%;
     }
 }
 
@@ -42,6 +46,11 @@
         margin-right: .5rem;
     }
     //encabezado, h2 y h3
+    header{
+        img{
+            height: 350px;
+        }
+    }
     section{
         h1{
             font-size: 2rem;
@@ -65,22 +74,28 @@
     }
     .encabezado{
         border-width: .2rem;
+        padding: 1rem;
+    }
+    .vision-mision{
+        width: 70%;
     }
     //media productos
     .productos{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        figure{
-            width: 40%;
-        }
-        img{
-            width: 70%;
+        .card-index{
+            width: 22%;
         }
     }
-    .productos-pc{
-        figure{
-            width: 90%;
+    .card{
+        width: 100%;
+        p{
+            margin: .3rem;
+            font-size: 1rem;
+        }
+        a{
+            width: 100%!important;
         }
     }
 }
@@ -100,7 +115,7 @@
     }
     .input-group{
         margin-bottom: .8rem;
-        width: 75%!important;
+        width: 97%!important;
         button{
             margin-left: -.5rem;
         }
@@ -110,6 +125,15 @@
         margin-right: .6rem;
     }
     //encabezado, h2 y h3
+    .encabezado{
+        border: none;
+        padding: 1rem;
+    }
+    header{
+        img{
+            height:280px
+        }
+    }
     section{
         h1{
             font-size: 2rem;
@@ -124,9 +148,12 @@
         h2{
             font-size: 1.8rem;
         }
+    }
+    .arreglo{
+        margin: 2rem 2rem;
     } 
-    .t-center{
-        text-align: center;
+    .vision-mision{
+        width: 90%;
     }
     .fs-2{
         font-size: 1.5rem!important;
@@ -143,31 +170,29 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        figure{
-            width: 40%;
+        .card-index{
+            width: 45%;
         }
-        img{
-            width: 75%;
-        }
-        figcaption{
-            text-align: center;
-            margin-left: 0;
-        }
+    }
+    .card{
+        width: 100%;
         p{
             font-size: 1rem;
+        }
+        a{
+            width: 100%!important;
         }
     }
     //grid de tienda
     .tienda{
-        grid-template-columns: 35vh 1fr;
-        grid-template-rows: repeat(7,auto);
+        grid-template-columns: 30vh repeat(2,1fr);
+        grid-template-rows: repeat(5,auto);
         grid-template-areas: 
-        "filters uno"
-        "filters dos"
-        "filters tres"
-        "filters cuatro"
-        "filters cinco"
-        "filters seis";
+        "filters uno dos"
+        "filters tres cuatro"
+        "filters cinco seis"
+        "filters siete ocho"
+        "filters nueve .";
     }
     //footer
     footer{
@@ -185,6 +210,9 @@
         div:nth-child(2){
             margin: 1rem 0;
             margin-right: .7rem;
+        }
+        .div-border{
+            border: none;
         }
     }
 }
@@ -204,13 +232,13 @@
     }
     .input-group{
         margin-bottom: .8rem;
-        width: 90%!important;
+        width: 93%!important;
         button{
             margin-left: -.5rem;
         }
     }
     .btn-sesion{
-        width: 35%;
+        width: 40%;
         margin-right: .6rem;
         font-size: .9rem;
     }
@@ -222,41 +250,16 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        figure{
-            width: 100%;
-        }
-        img{
-            width: 75%;
-        }
-        figcaption{
-            text-align: center;
-            margin-left: 0;
-        }
-        p{
-            font-size: 1rem;
-        }
-    }
-    .productos-pc{
-        figure{
-            width: 95%;
-            padding: 0;
-            img{
-                width: 50%;
-            }
-            figcaption{
-                font-size: 1.2rem;
-                margin: 0;
-            }
-            p{
-                font-size: .8rem;
-                margin: 0rem 0.3rem;
-            }
-        }
     }
     //encabezado, h2 y h3, quienes somos y ayuda
+    header{
+        img{
+            height: 170px;
+        }
+    }
     section{
         h1{
-            font-size: 1.4rem;
+            font-size: 1.1rem;
         }
         h3{
             p{
@@ -269,38 +272,33 @@
             font-size: 1.7rem;
         }
     }
-    .t-center{
-        text-align: center;
-    }
     .fs-2{
         font-size: 1.5rem!important;
     }
     .encabezado{
         border: none;
+        padding: 1rem;
     }
     .quienes-somos{
         h1{
             font-size: 2.5rem;
             margin-bottom: 0;
+            margin: 0 1rem;
         }
         p{
-            font-size: 1rem;
+            font-size: .9rem;
         }
     }
     .vision-mision{
-        width: 80%;
+        width: 100%;
         h2{
             margin-left: 1.1rem;
-        }
-        p{
-            font-size: 1rem;
             margin-top: 0;
         }
-    }
-    .preg-frec{
-        text-align: center;
-        font-size: 1.8rem;
-        font-weight:$fontMedium!important;
+        p{
+            font-size: .9rem;
+            margin-top: 0;
+        }
     }
     .fs-2{
         margin-left: 1.1rem;
@@ -318,17 +316,56 @@
     .btn-submit{
         width: 100%;
     }
+    .arreglo{
+        margin: 1rem;
+    }
+    .text{
+        h2{
+            font-weight: $fontNormal;
+        }
+    }
     //grid de tienda
     .tienda{
-        grid-template-columns: 18vh 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(7,auto);
         grid-template-areas: 
-        "filters uno"
-        "filters dos"
-        "filters tres"
-        "filters cuatro"
-        "filters cinco"
-        "filters seis";
+        "filters"
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco"
+        "seis"
+        "siete"
+        "ocho"
+        "nueve";
+    }
+    .filters-fix{
+        span{
+            display: none;
+        }
+        ul{
+            display: none;
+        }
+        h2{
+            text-align: center;
+            margin: .5rem;
+        }
+    }
+    .card{
+        width: 100%;
+        p{
+            font-size: .8rem;
+            margin: .4rem 0;
+        }
+        a{
+            width: 100%!important;
+            margin: 0;
+        }
+        h3{
+            font-size: 1.2rem;
+            margin: .2rem 0;
+        }
     }
     section{
         h2{
@@ -368,5 +405,33 @@
             margin: 1rem 0;
             margin-right: .7rem;
         }
+        .div-border{
+            border: none;
+        }
+    }
+    //pag error 404
+    .error-404{
+        img{
+            height: 400px;
+        }
+    }
+}
+
+//media pag error 404
+@media (width < 400px){
+    .error-404{
+        img{
+            height: 300px;
+        }
+    }
+    .btn-error{
+        width: 200px!important;
+    }
+}
+
+//media corrección btn-sesion 
+@media (min-width: 450px) and (max-width: 767px){
+    .btn-sesion{
+        width: 28%;
     }
 }
