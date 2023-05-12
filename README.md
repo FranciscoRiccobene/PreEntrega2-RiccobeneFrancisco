@@ -57,4 +57,4 @@ GIT - GitHub
 
 * Adjunto el link al mismo: https://wireframe.cc/pro/edit/633715
 
-Muchísimas gracias a la profe Lau y los tutores del curso, todos muy buena onda y dedicados! Un saludo :)
+Muchísimas gracias a la profe Lau, a Vero y demás tutores del curso, todos muy buena onda y dedicados! Un saludo :)
