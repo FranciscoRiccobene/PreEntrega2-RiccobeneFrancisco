@@ -48,7 +48,7 @@ GIT - GitHub
 ## Links del proyecto
 
 * Link al repositorio de GitHub: https://github.com/FranciscoRiccobene/ProyectoFinal-RiccobeneFrancisco.git
-* Link a GitHub Pages:
+* Link a GitHub Pages: https://franciscoriccobene.github.io/ProyectoFinal-RiccobeneFrancisco/
 * Link al sitio web hosteado en Vercel:
 
 ## Wireframes del proyecto
