@@ -13,6 +13,8 @@ Todas las páginas cuentan con una barra superior que incluye al logo del empren
 todavía no está en funcionamiento). Todo ésto se desarrolló implementando Bootstrap. Luego sigue el contenido principal de cada página web y por último un footer que incluye los accesos a redes sociales y diferentes links
 aún no funcionales. Todo el sitio web cuenta con su versión responsive.
 
+El sitio web fue testeado en Google Chrome, Mozilla y Microsoft Edge. Con algunos problemas en Chrome en cuanto al fill de los links a redes sociales, aparecen en negro. El resto todo perfecto.
+
 ### Contenido de las páginas web
 
 En la página de incio o home, se aprecia un carrousel conformado con 4 imágenes, el cuál fue desarrollado con Bootstrap. Seguido a ésto vemos un encabezado que contiene un h1, luego arranca main con la primera sección de 
