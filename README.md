@@ -11,7 +11,7 @@ El proyecto final presentado es un e-commerce de artículos tecnológicos, como 
 
 Todas las páginas cuentan con una barra superior que incluye al logo del emprendimiento, una barra de navegación para poder interactuar con las distintas páginas, un buscador web, un login y el ícono del carrito (el cuál 
 todavía no está en funcionamiento). Todo ésto se desarrolló implementando Bootstrap. Luego sigue el contenido principal de cada página web y por último un footer que incluye los accesos a redes sociales y diferentes links
-aún no funcionales. Todo el sitio web cuenta con su versión responsive.
+(links aún no funcionales). Todo el sitio web cuenta con su versión responsive.
 
 El sitio web fue testeado en Google Chrome, Mozilla y Microsoft Edge. Con algunos problemas en Chrome en cuanto al fill de los links a redes sociales, aparecen en negro. El resto todo perfecto.
 
