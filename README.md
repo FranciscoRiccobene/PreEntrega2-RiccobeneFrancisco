@@ -28,7 +28,7 @@ productos a la venta y un banner con distintas imágenes para sus respectivas p�
 
 La quinta página web es "Quiénes Somos". En ésta página se detallan los arranques y principios de la empresa, su misión y su visión.
 
-Por último vemos la página de "Ayuda". En la cuál se aprecia una sección de "Preguntas frecuentes", donde se implementó un accordion mediante Bootstrap, éste tiene 5 items que colapsan para responder las dudas de los clientes
+Por último vemos la página de "Ayuda". En la cuál se aprecia una sección de "Preguntas frecuentes", donde se implementó un accordion mediante Bootstrap, éste tiene 5 items que colapsan para aclarar las dudas de los clientes
 como precio, envíos, facturación, etc. Seguido a ésto vemos un formulario de contacto, que se desarrollo con Bootstrap utilizando su sistema de grid.
 
 Para finalizar, se incluyó una última página de Error 404, que sirve de acceso a todos aquellos links y botones que todavía no tienen sus respectivas funcionalidades. Posee una imágen y debajo un botón linkeado a la Home.
