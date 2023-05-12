@@ -17,7 +17,7 @@ El sitio web fue testeado en Google Chrome, Mozilla y Microsoft Edge. Con alguno
 
 ### Contenido de las páginas web
 
-En la página de incio o home, se aprecia un carrousel conformado con 4 imágenes, el cuál fue desarrollado con Bootstrap. Seguido a ésto vemos un encabezado que contiene un h1, luego arranca main con la primera sección de 
+En la página de incio o home, se aprecia un carousel conformado con 4 imágenes, el cuál fue desarrollado con Bootstrap. Seguido a ésto vemos un encabezado que contiene un h1, luego arranca main con la primera sección de 
 "productos destacados" y por último la segunda sección de "nuevos ingresos" con sus respectivos productos. Todos éstos fueron desarrollados con una card de Bootstrap.
 
 La segunda es la página denominada "PCs Armadas", donde se encuentran en venta las PCs ya ensambladas. Cuenta con un banner seguido del mismo encabezado. Luego un grid system casero, que contiene una sección
