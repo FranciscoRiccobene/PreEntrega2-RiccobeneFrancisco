@@ -49,7 +49,7 @@ GIT - GitHub
 
 * Link al repositorio de GitHub: https://github.com/FranciscoRiccobene/ProyectoFinal-RiccobeneFrancisco.git
 * Link a GitHub Pages: https://franciscoriccobene.github.io/ProyectoFinal-RiccobeneFrancisco/
-* Link al sitio web hosteado en Vercel:
+* Link al sitio web hosteado en Vercel: https://qualytech.vercel.app/
 
 ## Wireframes del proyecto
 
